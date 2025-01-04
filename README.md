@@ -63,7 +63,7 @@ All three pipelines deliver the first image with the function `first_img(word)`,
 
 *General notes, the pictures can be manipulated as variable or opened from their filenames.
 
-### Examples
+#### Examples
 `gif_pipeline(austen_prompts)`\ Will generate a gif without text.
 `gif_pipeline(austen_prompts, True)` Will generate a gif with the prompt's word on each picture.
 `extend_pipeline(prompt)`\
@@ -74,7 +74,7 @@ All three pipelines deliver the first image with the function `first_img(word)`,
 + The guidance scale adjusts how closely the image must match the prompt.
 + The strength adjusts how much the original image must be preserved.
 
-### Example
+#### Example
 `img2img_pipe(
             # Uncomment for sliding window:
             #prompt= (words[i]+ words[i+1] + words[i+2])+ '++' + positive_prompt,
