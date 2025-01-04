@@ -80,6 +80,6 @@ All three pipelines deliver the first image with the function `first_img(word)`,
             prompt= (words[i]+ '++' + positive_prompt,
             negative_prompt=negative_prompt,
             image=current_image, 
-            strength=strength, # How much the original image is preserved
-            guidance_scale=guidance_scale # How closely the image should match the prompt
+            strength=0.8, # How much the original image is preserved
+            **guidance_scale=12** # How closely the image should match the prompt
         ).images[0]`
