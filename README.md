@@ -48,3 +48,17 @@ There are three types of image generation available.
 All three pipelines deliver the first image with the function `first_img(word)`.
 General notes, the pictures can be manipulated as variable or opened from their filenames.
 
+### Parameters of the image generation
++ The prompt emphasizes the generated word with "++". It uses a positive and negative prompt to ensure good quality and graphical images.
++ The guidance scale adjusts how closely the image must match the prompt.
++ The strength adjusts how much the original image must be preserved.
+
+`img2img_pipe(
+            # Uncomment for sliding window:
+            #prompt= (words[i]+ words[i+1] + words[i+2])+ '++' + positive_prompt,
+            prompt= (words[i]+ '++' + positive_prompt,
+            negative_prompt=negative_prompt,
+            image=current_image, 
+            strength=strength, # How much the original image is preserved
+            guidance_scale=guidance_scale # How closely the image should match the prompt
+        ).images[0]`
