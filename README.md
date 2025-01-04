@@ -56,7 +56,7 @@ Austen prompt: ['poor', 'opinions', 'say', 'near', 'letter', 'cold', 'comfort', 
 There are three types of image generation available. All use StableDiffusionModelXL.
 All three pipelines deliver the first image with the function `first_img(word)`, using a text-to-image model. This first image is then used as input for the rest of the generation, using an image-to-image model.
 
-1. `gif_pipeline(prompt)` generates a 1024x1024 image per word of the prompt. The generated image is used as input of the next iteration. Each picture is saved and a .gif is created with all pictures.
+1. `gif_pipeline(prompt, with_text=False)` generates a 1024x1024 image per word of the prompt. The generated image is used as input of the next iteration. Each picture is saved and a .gif is created with all pictures.
 + The function `add_text_to_image(image_path, text)` adds the title of the image on it, to facilitate the understanding of the gif. It **overwrites** the original filename.
 2. `extend_pipeline(prompt)` generates a 1024x1024 image per word of the prompt. The generated image is cropped, the crop is extended to the 1024x1024 size and used as input of the next iteration. All pictures are merged in one picture of format 1024x(1024* prompt's length).
 3. `inpainting_pipeline(prompt)` generate a 1024x1024 image per word of the prompt. The generated image is copied smaller and pasted on itself. A mask covering almost all the small image is created. This ensures that the small image is not changed. The part which is not masked will be extended (inpainting) with the word prompt. Each picture is saved and the pipeline returns one image containing the previous images in its center. A video can be created with the delivered images with the functions `create_zoom_video(inpainting_filenames, 'inpainting_car_puzzle.mp4', zoom_factor=1.2, duration_per_image=0.8)` or `generate_zoom_video(image_folder, output_file, zoom_factor=0.05, duration_per_image=1)`.
@@ -64,7 +64,8 @@ All three pipelines deliver the first image with the function `first_img(word)`,
 *General notes, the pictures can be manipulated as variable or opened from their filenames.
 
 ### Examples
-`gif_pipeline(austen_prompts)`\
+`gif_pipeline(austen_prompts)`\ Will generate a gif without text.
+`gif_pipeline(austen_prompts, True)` Will generate a gif with the prompt's word on each picture.
 `extend_pipeline(prompt)`\
 `inpainting_pipeline(prompt)`
 
