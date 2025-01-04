@@ -15,12 +15,12 @@ The function `generate_prompt(prompt_type, length)` generates all three types of
 
 
 ### Examples
-`prompt0 = generate_prompt(PromptType.CONCRETE,2)`
-`prompt1 = generate_prompt(PromptType.WORDNET, 2)`
-`prompt2 = generate_prompt(PromptType.AUSTEN, 2)`
-`print(f'Concrete prompt: {prompt0}')`
-`print(f'Wordnet prompt: {prompt1}')`
-`print(f'Austen prompt: {prompt2}')`
+`prompt0 = generate_prompt(PromptType.CONCRETE,2)`\
+`prompt1 = generate_prompt(PromptType.WORDNET, 2)`\
+`prompt2 = generate_prompt(PromptType.AUSTEN, 2)`\
+`print(f'Concrete prompt: {prompt0}')`\
+`print(f'Wordnet prompt: {prompt1}')`\
+`print(f'Austen prompt: {prompt2}')`\
 
 Output:
 
