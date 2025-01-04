@@ -15,17 +15,17 @@ The function `generate_prompt(prompt_type, length)` generates all three types of
 
 
 ### Examples
-`prompt0 = generate_prompt(PromptType.CONCRETE, 2)
-prompt1 = generate_prompt(PromptType.WORDNET, 2)
-prompt2 = generate_prompt(PromptType.AUSTEN, 2)
-print(f'Concrete prompt: {prompt0}')
-print(f'Wordnet prompt: {prompt1}')
+`prompt0 = generate_prompt(PromptType.CONCRETE, 2)\
+prompt1 = generate_prompt(PromptType.WORDNET, 2)\
+prompt2 = generate_prompt(PromptType.AUSTEN, 2)\
+print(f'Concrete prompt: {prompt0}')\
+print(f'Wordnet prompt: {prompt1}')\
 print(f'Austen prompt: {prompt2}')`
 
 Output:
 
-Concrete prompt: ['file folder', 'open sign']
-Wordnet prompt: ['holding_pattern', 'tannin']
+Concrete prompt: ['file folder', 'open sign']\
+Wordnet prompt: ['holding_pattern', 'tannin']\
 Austen prompt: ['poor', 'opinions', 'say', 'near', 'letter', 'cold', 'comfort', 'want', 'sub', 'sort']
 
 
