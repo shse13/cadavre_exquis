@@ -71,6 +71,9 @@ All three pipelines deliver the first image with the function `first_img(word)`,
 `extend_pipeline(prompt)`\
 `inpainting_pipeline(prompt)`
 
+Example on how to use the functions are given in the notebook.
+
+
 ### Parameters of the image generation
 + The prompt emphasizes the generated word with "++". It uses a positive and negative prompt to ensure good quality and graphical images.
 + The guidance scale adjusts how closely the image must match the prompt.
