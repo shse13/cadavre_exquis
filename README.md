@@ -1,8 +1,8 @@
 # Cadavre Exquis - Exquisite Corpse
-Project for the course "Digital Creativity"
+Project for the course "Digital Creativity", Hochschule Luzern
 Autumn 2024
 
-This repository allows to generates images based on random prompts. It is a free adaptation of the game "Exquisite Corpse" invented by Surrealists around 1925. Images are generated iteratively and can be brought together in a .gif, merged picture or a video. Examples are provided in the repository and on the Tumblr [contrarysubjecthearingsmalllaw](https://www.tumblr.com/blog/contrarysubjecthearingsmalllaw)
+It generates images based on random prompts. It is a digital adaptation of the game "Exquisite Corpse" invented by Surrealists around 1925. Images are generated iteratively and can be brought together in a .gif, merged picture or a video. Examples are provided in the repository and on the Tumblr [contrarysubjecthearingsmalllaw](https://www.tumblr.com/blog/contrarysubjecthearingsmalllaw)
 
 ## Libraries
 All libraries necessary are installed in the first cell of the notebook.
