@@ -54,7 +54,7 @@ Austen prompt: ['poor', 'opinions', 'say', 'near', 'letter', 'cold', 'comfort', 
 
 ## Image generation
 There are three types of image generation available. All use StableDiffusionModelXL.
-All three pipelines deliver the first image with the function `first_img(word)`, using a text-to-image model. This first image is then used as input for the rest of the generation, using an image-to-image model.
+All three pipelines deliver the first image with the function `first_img(word)`, using a text-to-image model. This first image is then used as input for the rest of the generation, using an image-to-image model. The final functions below cover all the steps and deliver the output of each kind of Exquisite Corpse.
 
 1. `gif_pipeline(prompt, with_text=False)` generates a 1024x1024 image per word of the prompt. The generated image is used as input of the next iteration. Each picture is saved and a .gif is created with all pictures.
 + The function `add_text_to_image(image_path, text)` adds the title of the image on it, to facilitate the understanding of the gif. Font, font size and placement can be modified. It **overwrites** the original filename.
